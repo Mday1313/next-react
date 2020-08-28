@@ -23,9 +23,9 @@ const Layout = ( { children, title, subtitle } ) => (
             <Link href="/blog"><a>Blog</a></Link>
         </header>
 
-        <h1>{title}</h1>
+        <h1 style={{textAlign: "center" }}>{title}</h1>
         <h3>{subtitle}</h3>
-        {children}
+        <div style={{display: "flex", justifyContent: "center"}}>{children}</div>
 
         <footer>&copy; {new Date().getFullYear()}</footer>
         <style jsx>{`
@@ -57,6 +57,10 @@ const Layout = ( { children, title, subtitle } ) => (
                 color: #fff;
                 background: #4a4a4a;
                 text-align: center;
+                position:absolute;
+                left:0;
+                bottom:0;
+                right:0;
             }
         `}</style>
         <style global jsx>{`
