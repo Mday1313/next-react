@@ -24,7 +24,7 @@ const Layout = ( { children, title, subtitle } ) => (
         </header>
 
         <h1 style={{textAlign: "center" }}>{title}</h1>
-        <h3>{subtitle}</h3>
+        <h3 style={{textAlign: "center"}}>{subtitle}</h3>
         <div style={{display: "flex", justifyContent: "center"}}>{children}</div>
 
         <footer>&copy; {new Date().getFullYear()}</footer>
