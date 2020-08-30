@@ -1,5 +1,5 @@
 import Error from './_error';
-import Link from 'next/link';
+
 import Layout from '../components/Layout';
 import fetch from 'isomorphic-unfetch';
 import { Component } from 'react';
@@ -23,12 +23,13 @@ export default class About extends Component {
         console.log(user)
         return (
             <Layout title={user.name}>
-                <p>{user.bio}</p>
-                <p>{user.location}</p>
-                <Link href="/">
-                    <button> Go to Home</button>
-                </Link>
-                <img width="300px" src={user.avatar_url} alt="Melissa"/>
+                <div style={{display: "flex", flexDirection: "column", textAlign: "center"}}>
+                    <p>{user.bio}</p>
+                    <p >{user.location}</p>
+                
+                    <p><img width="300px" src={user.avatar_url} alt="Melissa"/></p>
+                </div>
+               
             </Layout>
         )
     }
