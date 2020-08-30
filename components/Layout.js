@@ -66,6 +66,7 @@ const Layout = ( { children, title, subtitle } ) => (
         <style global jsx>{`
             body: {
                 margin: 0;
+                padding: 0;
                 font-size: 110%;
                 background: #f0f0f0;
             }
